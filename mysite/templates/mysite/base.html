@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{%  static 'mysite/css/bootstrap.min.css'%}">
+    <script src="{% static 'mysite/js/bootstrap.min.js' %}"></script>
+    <title>{%block title%}  {%endblock%}</title>
+    
+</head>
+<body>
+    
+    {% include "mysite/header.html" %}
+  {% block content %}
+  
+  
+  {%endblock%}
+  
+  
+</body>
+{% include "mysite/footer.html" %}
+</html>
